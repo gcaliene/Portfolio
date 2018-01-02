@@ -6,13 +6,14 @@
     <!--   3rd-Party-Libraries-->
     <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- End pf 3rd-Party-Libraries  -->
     <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 <body>
-    <nav role="navigation" class="menu navigation-container" id="home">
+    <nav role="navigation" class="menu navigation-container" >
       <ul class="navigation-menu navigation-container-list">
         <!--  li*4>a* gives below-->
         <li><a href="#">Home</a></li>
@@ -26,28 +27,31 @@
 </header>
       <div class="menu-mobile ">
         <ul class="menu-mobile-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="menu-mobile-list-items">Home</a></li>
+          <li><a href="#about" class="menu-mobile-list-items">About</a></li>
+          <li><a href="#projects" class="menu-mobile-list-items">Project</a></li>
+          <li><a href="#contact" class="menu-mobile-list-items">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <main role="main">
-        <header role="banner" class="header header-background">
+        <header role="banner" class="header header-background " id="home">
           <!-- <div class="header-background">
             <img src="styles/assets/beach-hero.jpg" alt="beach-hero">
           </div> -->
-          <div class="hero">
-            <div class="hero-image">
-              <img src="" alt="">
-            </div>
-            <div class="hero-text">
-              <h1 class="hero-text-title">Gerson Calienes</h1>
-              <h2 class="hero-text-subtitle"> Full-Stack Web Developer </h2>
+          <div class="header-background-layer">
+            <div class="hero">
+              <div class="hero-image">
+                <img src="" alt="">
+              </div>
+              <div class="hero-text">
+                <h1 class="hero-text-title">Gerson Calienes</h1>
+                <h2 class="hero-text-subtitle"> Full-Stack Web Developer </h2>
+              </div>
             </div>
           </div>
+
 
 
         </header>
@@ -58,7 +62,9 @@
               <div class="image-container">
                 <img src="styles/assets/obama.jpg" alt="">
               </div>
-              <p>I make bespoke, made-to-order websites and am currently building great things for amazing clients at FHOKE.</p>
+              <p>Long-time techie with the passion for new technologies building websites and applications for the future.</p>
+              <p>I use Node and React as my main stack but I'm constantly learning new technologies, such as Vue.js.</p>
+              <p></p>
             </div>
         </section>
 
@@ -66,16 +72,52 @@
           <div class="section-container-projects">
             <h2>Projects</h2>
             <div class="section-container-projects-container">
-              <div id="c1" class="section-container-project">SunRise App</div>
-              <div id="c2" class="section-container-project">PetFinder</div>
-              <div id="c3" class="section-container-project">iSpentWhat</div>
+              <div id="c1" class="section-container-project">
+                <div class="image-container">
+                  <img src="styles/assets/sunriseCountdown.png" alt="">
+                </div>
+                <span>SunRise App</span>
+                <p>By using  HTML, CSS and Ajax, this App will show you the countdown for the next sunrise so that you can plan ahead!</p>
+                <div class="section-container-project-link">
+                  <a href="https://gcaliene.github.io/Thinkful-Sunrise-App-Capstone/">Demo Site</a> <br>
+                  <a href="https://github.com/gcaliene/Thinkful-Sunrise-App-Capstone"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <div id="c2" class="section-container-project">
+                <div class="image-container">
+                  <img src="styles/assets/sunriseCountdown.png" alt="">
+                </div>
+                <span> PetFinder</span>
+                <p>Using HTML/CSS and Node, users can help families find their lost furry loved ones. </p>
+                <div class="section-container-project-link">
+                  <a href="https://github.com/gcaliene/node-capstone">Demo Site</a> <br>
+                  <a href="https://lit-beach-73059.herokuapp.com/"><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <div id="c3" class="section-container-project">
+                <div class="image-container">
+                  <img src="styles/assets/sunriseCountdown.png" alt="">
+                </div>
+                <span>iSpentWhat</span>
+                <p>This Full-Stack App uses Node and React to help users keep track of any late night spending that users may not be aware of. </p>
+                <div class="section-container-project-link">
+                  <a href="">Demo Site</a> <br>
+                  <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <section id="contact" class="section section-three">
-          <div class="section-container">
-            <h2>contact</h2>
+          <div class="section-container contact">
+            <h2>Contact Me!</h2> <br>
+            <ul class="contact-list">
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
           </div>
         </section>
 
@@ -90,7 +132,13 @@
             Section 4
         </section> -->
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">
+      <ul class="contact-list">
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </footer>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
     </script>
