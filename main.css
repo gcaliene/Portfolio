@@ -13,7 +13,8 @@ body {
 nav,
 footer {
 	padding: 1% 0;
-	background-color: #2f5572;
+	background-color: #111111;
+	opacity: 0.7;
 }
 
 nav {
@@ -26,11 +27,11 @@ nav {
 
 a {
 	text-decoration: none;
-	color: #faebd7;
+	color: white;
 	padding: 10px 5px;
 }
 a:visited {
-	color: #faebd7;
+	color: white;
 }
 
 a:active {
@@ -40,7 +41,26 @@ a:active {
 }
 a:hover {
 	/* background-color: #001f3f; */
-	color: #001f3f;
+	color: grey;
+}
+
+.wrapper {
+	overflow: hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-header {
+	position: fixed;
+	background-color: rgba(47, 85, 114, 0.3);
+	padding: 10px 0;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	transition: background-color 0.3s ease-out;
 }
 
 .navigation-container-list {
@@ -105,14 +125,59 @@ section:nth-child(even) h2 {
 	display: none;
 }
 
+/* .header-background {
+	background-image: url(styles/assets/header-background-image.jpeg);
+	background-repeat: no-repeat; */
+/* background-position: 50% 50%; */
+/* background-size: cover;
+	position: relative; */
+/* height: 700px; */
+/* z-index: ;
+} */
+
 .header-background {
-	background-image: url(styles/assets/beach-hero.jpg);
+	position: relative;
+	background: black;
+	overflow: hidden;
+	height: 100vh;
+}
+.header-background:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* height: 100%; */
+	/* width: 100vw; */
+	height: 100vh;
+	z-index: 1;
+	opacity: 0.3;
+	background-image: url(styles/assets/header-background-image.jpeg);
 	background-repeat: no-repeat;
-	/* background-position: 50% 50%; */
+	background-position: 50% 0;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.header-background h1 {
+	padding: 10px;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+	color: #fff;
+}
+
+/* .header-background-layer {
+	background-color: #2f5572;
+	opacity: 0.9;
 	background-size: cover;
 	position: relative;
-	/* height: 700px; */
-}
+	z-index: 30;
+	margin: auto;
+} */
 
 /* .header-background-layer {
 	background-color: rgba(248, 247, 216, 0.7);
@@ -125,22 +190,25 @@ section:nth-child(even) h2 {
 	height: 700px;
 } */
 
+.hero {
+	position: relative;
+	/* line-height: 50%; */
+	margin-top: 25%;
+}
+
 .hero-text {
-	padding-top: 25px;
+	margin: 0;
+	position: relative;
 }
 
 .hero-text h1,
 h2 {
 	/* color: #001f3f; */
-	color: #2f5572;
+	color: white;
 }
 
 .section-container {
-	/* min-width: 40%; */
 	width: 40%;
-	/* float: right; */
-	/* position: relative; */
-	/* clear: both; */
 	margin: auto;
 	padding: 5px;
 	border-style: solid;
