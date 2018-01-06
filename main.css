@@ -179,7 +179,7 @@ section:nth-child(even) h2 {
   box-shadow: 5px 5px #2f5572;
 }
 
-/* Uniwue to About CSS below */
+/* Unique to About CSS below */
 .about-container {
   max-width: 1200px;
   margin-left: auto;
@@ -196,7 +196,13 @@ section:nth-child(even) h2 {
   padding-top: 10px;
   margin-left: 5px;
 }
+
+.h2-style {
+  padding-top: 15px;
+}
 /* About CSS above */
+
+/* Unique to Projects section below */
 
 .section-container h2 {
   color: #001f3f;
