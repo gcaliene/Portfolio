@@ -239,8 +239,25 @@ section#projects a {
   max-width: 350px;
   max-height: 450px;
 }
-
 /* Unique to Projects section above */
+
+/* Unique to Contacts below here */
+
+.contact-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  display: inline;
+  padding: 5px 20px;
+}
+#contact h2 {
+  margin-bottom: 0;
+}
+
+/* Unique to Contacts above here */
 
 .section-container h2 {
   color: #001f3f;
@@ -490,6 +507,10 @@ footer p {
 
   .section-container-project-link {
     padding-top: 0;
+  }
+  .contact-list li {
+    /* margin-bottom: 20px; */
+    display: block;
   }
 }
 
