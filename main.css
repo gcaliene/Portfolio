@@ -147,7 +147,7 @@ section:nth-child(even) h2 {
 	height: 100vh;
 	z-index: 1;
 	opacity: 0.3;
-	background-image: url(styles/assets/header-background-image-min.jpeg);
+	background-image: url(styles/assets/header-background-image-min2.jpeg);
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 	-ms-background-size: cover;
