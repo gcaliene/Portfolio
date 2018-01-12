@@ -43,6 +43,10 @@ a:active {
 
   color: #001f3f;
 }
+a:focus {
+  /* background-color: #001f3f; */
+  color: grey;
+}
 a:hover {
   /* background-color: #001f3f; */
   color: grey;
@@ -147,7 +151,7 @@ section:nth-child(even) h2 {
   height: 100vh;
   z-index: 1;
   opacity: 0.3;
-  background-image: url(styles/assets/header-background-image-min2.jpeg);
+  background-image: url(assets/header-background-image-min2.jpeg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   -ms-background-size: cover;
