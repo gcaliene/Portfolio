@@ -230,18 +230,24 @@ section#projects a {
   margin-right: auto;
   margin-bottom: 50px;
   padding: 2% 0%;
-  border: 2px solid;
+  /* border: 2px solid; */
 }
 
 .single-project-container {
   display: inline-block;
-  border: 2px solid;
+  /* border: 2px solid; */
+  border-right: 2px solid;
+
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
   max-width: 350px;
   max-height: 450px;
+}
+
+.single-project-container:last-child {
+  border-right: none;
 }
 /* Unique to Projects section above */
 
@@ -362,188 +368,4 @@ footer p {
   line-height: 0px;
   padding: 0;
   margin: 15px;
-}
-
-/*                                                              */
-/* /////////       Media Queries     ///////////  */
-/*                                                            */
-
-@media only screen and (max-width: 500px) {
-  /* section {
-    background-color: #2f5572;
-    min-height: 100vh;
-    padding: 8% 12% 0% 12%;
-    border: none;
-  } */
-  .navigation-container {
-    /* background-color: #ba; */
-    padding: 30px;
-  }
-  .navigation-container-list {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-    background: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    line-height: 45px;
-    padding: 5px 15px 0px 15px;
-    color: #999;
-    border: 0;
-    font-size: 1.4em;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    z-index: 10000000000000;
-  }
-  .cross {
-    display: block;
-    background: none;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    padding: 5px 15px 0px 15px;
-    color: #999;
-    border: 0;
-    font-size: 3em;
-    line-height: 65px;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    z-index: 10000000000000;
-  }
-
-  .menu-mobile {
-    display: block;
-  }
-  .menu-mobile-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-  }
-
-  #about h2 {
-    margin-top: 40px;
-  }
-
-  #projects h2 {
-    color: white;
-    margin-top: 47px;
-  }
-  .menu-mobile-list li:not(:last-child) {
-    text-decoration: none;
-    padding: 5px;
-    color: white;
-    /* background-color: #036; */
-    margin: 10px;
-  }
-
-  .menu-mobile-list li a:hover {
-    color: white;
-    /* background-color: grey; */
-  }
-  .section-container {
-    width: 90%;
-    margin: auto;
-  }
-  .section-container-projects {
-    width: 90%;
-    margin: auto;
-  }
-  .section-container-project {
-    display: block;
-    margin: 15px;
-    min-width: 95%;
-    min-height: 100px;
-  }
-
-  .section-container-project p {
-    margin-bottom: 30px;
-  }
-
-  #c1,
-  #c2,
-  #c3 {
-    width: 90%;
-  }
-
-  .section-half-left {
-    float: none;
-  }
-
-  .about-container {
-    padding-bottom: 13%;
-  }
-  .about-container p {
-    margin-top: 0;
-  }
-
-  .projects-container {
-    border: none;
-    padding: 0;
-  }
-
-  .single-project-container {
-    /* display: inline-block; */
-    border: none;
-    border-bottom: 2px solid;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    max-width: 300px;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .single-project-container:first-child {
-    margin-top: 0;
-  }
-
-  .single-project-container:last-child {
-    border-bottom: none;
-  }
-
-  .single-project-container:not(:first-child) {
-    /* border-bottom: none; */
-    margin-top: 20px;
-  }
-
-  .single-project-container:not(:last-child) {
-    padding-bottom: 30px;
-  }
-
-  .section-container-project-link {
-    padding-top: 0;
-  }
-  .contact-list li {
-    /* margin-bottom: 20px; */
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 1280px) and (min-width: 500px) {
-  .section-container-project p {
-    /* margin-top: 25px; */
-    margin-bottom: 45px;
-  }
-  .section-container-projects {
-    width: 90%;
-    margin: auto;
-  }
-  .section-container-project {
-    display: inline-block;
-    margin: auto;
-    margin-bottom: 20px;
-    min-width: 45%;
-    min-height: 100px;
-  }
-
-  .section-container-project-link {
-    /* padding-top: 115px; */
-  }
-
-  .about-container p {
-    margin-top: 0;
-  }
 }
