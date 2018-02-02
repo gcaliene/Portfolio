@@ -221,6 +221,10 @@ section:nth-child(even) h2 {
   width: 100%;
   height: 100%;
 }
+
+.iSpentWhat-pic {
+  border-radius: 14% 14% 0 0;
+}
 /* About CSS above */
 
 /* Unique to Projects section below */
