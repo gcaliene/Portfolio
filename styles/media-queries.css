@@ -4,7 +4,6 @@
 /*  Max width was 1098*/
 @media only screen and (max-width: 1083px) and (min-width: 743px) {
   .section-container-project p {
-    /* margin-top: 25px; */
     margin-bottom: 45px;
   }
   .section-container-projects {
@@ -20,7 +19,6 @@
   }
 
   .section-container-project-link {
-    /* padding-top: 115px; */
   }
 
   .about-container p {
@@ -41,7 +39,6 @@
 @media only screen and (max-width: 743px) and (min-width: 643px) {
   .single-project-container {
     border: none;
-    /* border-bottom: 2px solid; */
     margin-bottom: 40px;
     padding-bottom: 70px;
   }
@@ -52,22 +49,7 @@
   }
 }
 
-/* @media only screen and (max-width: 1098px) and (min-width: 743px) {
-} */
-/* @media only screen and (max-width: 743) and (min-width: 500px) {
-  .single-project-container:f-child {
-    border-right: none;
-    border-bottom: 2px solid;
-  }
-} */
-
 @media only screen and (max-width: 643px) {
-  /* section {
-    background-color: #2f5572;
-    min-height: 100vh;
-    padding: 8% 12% 0% 12%;
-    border: none;
-  } */
   .image-container_about-image {
     display: block;
     object-fit: cover;
@@ -79,7 +61,6 @@
     margin-bottom: 10px;
   }
   .navigation-container {
-    /* background-color: #ba; */
     padding: 30px;
   }
   .navigation-container-list {
@@ -140,13 +121,11 @@
     text-decoration: none;
     padding: 5px;
     color: white;
-    /* background-color: #036; */
     margin: 10px;
   }
 
   .menu-mobile-list li a:hover {
     color: white;
-    /* background-color: grey; */
   }
   .section-container {
     width: 90%;
@@ -190,13 +169,8 @@
   }
 
   .single-project-container {
-    /* display: inline-block; */
     border: none;
-    /* border-bottom: 2px solid; */
     border-right: none;
-
-    /* margin-left: auto; */
-    /* margin-right: auto; */
     max-width: 300px;
     padding-right: 20px;
     padding-left: 20px;
@@ -210,7 +184,6 @@
   }
 
   .single-project-container:not(:first-child) {
-    /* border-bottom: none; */
     margin-top: 20px;
   }
 
@@ -222,7 +195,6 @@
     padding-top: 0;
   }
   .contact-list li {
-    /* margin-bottom: 20px; */
     display: block;
   }
 }
