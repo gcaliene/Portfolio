@@ -112,13 +112,21 @@ section h2 {
   color: #faebd7;
 }
 
-section:nth-child(even) {
+#about,
+#contact {
   background-color: white;
-  /* margin: 0; */
+}
+#about h2,
+#contact h2 {
+  color: #444;
+}
+
+/* section:nth-child(even) {
+  background-color: white;
 }
 section:nth-child(even) h2 {
   color: #444;
-}
+} */
 
 .hamburger {
   display: none;
