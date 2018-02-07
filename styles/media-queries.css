@@ -1,6 +1,7 @@
 /*                                                              */
 /* /////////       Media Queries     ///////////  */
-/*                                                            */
+/*
+  Testing new branch                              */
 /*  Max width was 1098*/
 @media only screen and (max-width: 1083px) and (min-width: 743px) {
   .section-container-project p {
