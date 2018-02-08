@@ -3,6 +3,7 @@
   border: none;
   color: #444;
   min-height: 600px;
+  padding: 0;
 }
 
 .section-skills h2 {
@@ -14,17 +15,18 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 1260px;
+  margin: auto;
   /* align-content: center; */
 }
 
 .skills-container_item {
   border: 2px grey solid;
-  min-width: 300px;
+  min-width: 350px;
   min-height: 400px;
   margin: auto;
-
   max-height: 550px;
-  max-width: 550px;
+  /* width: 700px; */
 }
 
 .skills-container_item_image {
