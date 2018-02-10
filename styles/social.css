@@ -1,0 +1,41 @@
+.half-section {
+  width: 45%;
+  min-width: 300px;
+  /* border: 2px grey solid; */
+  max-height: 1000px;
+}
+
+.whole-section {
+  /* border: 2px grey solid; */
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.clear-fix {
+  overflow: auto;
+}
+.clear-fix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@media only screen and (max-width: 1712px) {
+  .left {
+    float: none;
+  }
+
+  .right {
+    float: none;
+  }
+  .half-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
