@@ -1,12 +1,12 @@
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
-  type: 'bar',
+  type: 'polarArea',
   data: {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ['Node', 'React', 'Vanilla JS', 'jQuery', 'HTML5/CSS3'],
     datasets: [
       {
         label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [4, 3, 4, 3, 4],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
@@ -28,15 +28,40 @@ var myChart = new Chart(ctx, {
     ]
   },
   options: {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true
+    title: {
+      display: true,
+      position: 'top',
+      text: 'Skills by yours truly.'
+    },
+    scale: {
+      ticks: {
+        max: 4,
+        min: 0,
+        stepSize: 1,
+        beginAtZero: true,
+        callback: function(value, index, values) {
+          // return '$' + value;
+          switch (value) {
+            case 1:
+              return 'Just Learning...';
+              break;
+            case 2:
+              return 'Novice';
+              break;
+            case 3:
+              return 'Average';
+              break;
+            case 4:
+              return 'Advanced';
+              break;
+            case 5:
+              return 'Master';
+              break;
+            default:
+              console.log('Graph Loaded');
           }
         }
-      ]
+      }
     }
   }
 });
-
