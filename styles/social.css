@@ -3,6 +3,11 @@
   min-width: 300px;
   /* border: 2px grey solid; */
   max-height: 1000px;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
 
 .whole-section {
@@ -23,6 +28,9 @@
   content: '';
   clear: both;
   display: table;
+}
+.left.clear-fix {
+  margin-top: 0px;
 }
 
 @media only screen and (max-width: 1712px) {
