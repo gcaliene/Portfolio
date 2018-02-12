@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Bellefair|Open+Sans|Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico">
+
 
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
     <link rel="stylesheet" type="text/css" href="./styles/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="./styles/skills-section.css">
+    <link rel="stylesheet" type="text/css" href="./styles/social.css">
+    <link rel="stylesheet" type="text/css" href="./styles/myBox.css">
+
+
+
 
 
 </head>
@@ -21,8 +29,11 @@
         <!--  li*4>a* gives below-->
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Social</a></li>
+
+        <li><a href="#contact-footer">Contact</a></li>
       </ul>
       <!-- <img src="styles/assets/list-512.png" class="hamburger">       </img>-->
       <button class="hamburger">&#9776;</button>
@@ -31,8 +42,11 @@
         <ul class="menu-mobile-list">
           <li><a href="#home" class="menu-mobile-list-items">Home</a></li>
           <li><a href="#about" class="menu-mobile-list-items">About</a></li>
-          <li><a href="#projects" class="menu-mobile-list-items">Project</a></li>
-          <li><a href="#contact" class="menu-mobile-list-items">Contact</a></li>
+          <li><a href="#skills" class="menu-mobile-list-items">Skills</a></li>
+          <li><a href="#projects" class="menu-mobile-list-items">Projects</a></li>
+          <li><a href="#contact" class="menu-mobile-list-items">Social</a></li>
+
+          <li><a href="#contact-footer" class="menu-mobile-list-items">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -52,7 +66,6 @@
         <section id="about" class="section section-one">
           <h2 class="h2-style">About Me</h2>
             <!-- <div class="section-container"> -->
-
             <div class="about-container">
               <div class="">
                 <div class="image-container_about-image">
@@ -69,9 +82,20 @@
             </div>
         </section>
 
+        <section id="skills" class="section section-skills ">
+          <br/>
+          <h2 style="line-height:3.2rem">Skills</h2>
+          <div class="section-skills_container">
+            <canvas id="myChart" width="500" height="500"></canvas>
+          </div>
+
+        </section>
+
 
 
         <section id="projects" class="section section-two projects-section">
+          <br/>
+
           <h2>Projects</h2>
             <div class="projects-container">
 
@@ -116,22 +140,58 @@
         </section>
 
         <section id="contact" class="section section-three">
-          <h2>Contact Me!</h2> <br>
-          <div class="section-container contact">
-            <ul class="contact-list">
-              <li><a href="https://github.com/gcaliene" target="_blank"><i class="fa fa-github fa-2x" style="color:#6e5494" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/gerson-calienes-22a926157/" target="_blank"><i class="fa fa-linkedin fa-2x" style="color:#2164f4" aria-hidden="true"></i></a></li>
-              <!-- <li><a href=""><i class="fa fa-linkedin-square fa-2x" style="color:blue" aria-hidden="true"></i></a></li> -->
-              <li><a href="https://twitter.com/Devgerson415" target="_blank"><i class="fa fa-twitter fa-2x" style="color:#0084b4" aria-hidden="true"></i></a></li>
-              <li><a href="mailto:devgerson@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" style="color:#dd4b39" aria-hidden="true"></i></a></li>
-            </ul>
+          <br/>
+
+          <h2>Social</h2>
+          <div class="whole-section">
+            <div class="half-section left">
+              <h3 class="left clear-fix">My Awesome List of Links</h3>
+              <div class="myBox">
+                <ul class="reading-list">
+                  <li class="reading-list_item"><a href="https://sentry.io/for/javascript/" target="_blank">JS Error Tracking - Sentry</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="https://tf-assets-prod.s3.amazonaws.com/career-services-materials/hiredfast.pdf" target="_blank">Get Hired Fast by Kevin Ko</a></li>
+                  <li class="reading-list_item"><a href="http://www.hemingwayapp.com/" target="_blank">Simplify Your Copy with Hemingway</a></li>
+                  <li class="reading-list_item"><a href="http://codingheroes.io/resources/" target="_blank">Awesome Web Design Tools</a></li>
+                  <li class="reading-list_item"><a href="https://github.com/mochajs/mocha/releases/tag/v5.0.1" target="_blank">Mocha v5 update</a></li>
+                  <li class="reading-list_item"><a href="https://boneskull.com/mocha-v4-nears-release/" target="_blank">Mocha v4 changes review</a></li>
+                  <!-- <li><a href=""></a></li> -->
+
+                </ul>
+              </div>
+
+            </div>
+            <div class="half-section right">
+                <a class="twitter-timeline" data-height="500" href="https://twitter.com/Devgerson415?ref_src=twsrc%5Etfw">Tweets by Devgerson415</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
           </div>
+
+
         </section>
     </main>
 
-    <footer role="content-info">
+    <footer id="contact-footer" role="content-info">
+      <br/>
+      <h2 style="color:white;">Contact Me!</h2>
+      <div class="section-container contact">
+        <ul class="contact-list">
+          <li><a href="https://github.com/gcaliene" target="_blank"><i class="fa fa-github fa-2x" style="color:#6e5494" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/gerson-calienes-22a926157/" target="_blank"><i class="fa fa-linkedin fa-2x" style="color:#2164f4" aria-hidden="true"></i></a></li>
+          <!-- <li><a href=""><i class="fa fa-linkedin-square fa-2x" style="color:blue" aria-hidden="true"></i></a></li> -->
+          <li><a href="https://twitter.com/Devgerson415" target="_blank"><i class="fa fa-twitter fa-2x" style="color:#0084b4" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:devgerson@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" style="color:#dd4b39" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </br>
       <p id="footer">
-
       </p>
     </footer>
 
@@ -139,6 +199,8 @@
     <script type="text/javascript"  src="scripts/hamburger.js"></script>
     <script type="text/javascript"  src="scripts/index.js"></script>
     <script type="text/javascript"  src="scripts/smooth-scroll.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script type="text/javascript" src="scripts/skills-chart.js"></script>
 
   </body>
 </html>
