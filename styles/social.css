@@ -33,9 +33,29 @@ h3 {
   margin-top: 0px;
 }
 
+.reading-list {
+  list-style: none;
+  text-align: left;
+}
+/* .reading-list_item li {
+  text-align: left;
+  list-style: none;
+} */
+.reading-list_item a {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+.reading-list_item a:hover {
+  color: #1d1d1d;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1712px) {
   .left {
     float: none;
+    display: block;
+    clear: both;
   }
 
   .right {
@@ -45,5 +65,8 @@ h3 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .reading-list {
+    text-align: center;
   }
 }
