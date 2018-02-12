@@ -16,7 +16,7 @@ body {
 
 nav,
 footer {
-  padding: 1% 0;
+  padding: 10px 0;
   background-color: #111111;
   opacity: 0.95;
 }
