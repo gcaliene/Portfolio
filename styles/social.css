@@ -41,14 +41,16 @@ h3 {
   text-align: left;
   list-style: none;
 } */
+
 .reading-list_item a {
-  color: #1d1d1d;
+  color: #26afeb;
   text-decoration: none;
 }
 .reading-list_item a:hover {
-  color: #1d1d1d;
-  text-decoration: underline;
-  font-weight: bold;
+  color: #d87e13;
+  transition: color 0.2s;
+  /* text-decoration: underline; */
+  /* font-weight: bold; */
 }
 
 @media only screen and (max-width: 1712px) {
@@ -68,5 +70,8 @@ h3 {
   }
   .reading-list {
     text-align: center;
+  }
+  .reading-list_item {
+    padding-right: 35px;
   }
 }
