@@ -16,12 +16,13 @@ var myChart = new Chart(ctx, {
         label: '# of Votes',
         data: [4, 4, 5, 4, 5, 3, 2],
         backgroundColor: [
-          'rgba(255, 99, 132, .2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
+          'rgba(255, 99, 132, 0.1)',
+          'rgba(54, 162, 235, 0.1)',
+          'rgba(255, 206, 86, 0.1)',
+          'rgba(75, 192, 192, 0.1)',
+          'rgba(153, 102, 255, 0.1)',
+          'rgba(255, 159, 64, 0.1)',
+          'rgba(0, 0, 0, 0.1)'
         ],
         borderColor: [
           'rgba(255,99,132,1)',
@@ -29,7 +30,17 @@ var myChart = new Chart(ctx, {
           'rgba(255, 206, 86, 1)',
           'rgba(75, 192, 192, 1)',
           'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
+          'rgba(255, 159, 64, 1)',
+          'rgba(0, 0, 0, 1)'
+        ],
+        hoverBackgroundColor: [
+          'rgba(255,99,132, .6)',
+          'rgba(54, 162, 235, .6)',
+          'rgba(255, 206, 86, .6)',
+          'rgba(75, 192, 192, .6)',
+          'rgba(153, 102, 255, .6)',
+          'rgba(255, 159, 64, .6)',
+          'rgba(0, 0, 0, 0.6)'
         ],
         borderWidth: 1
       }
@@ -43,6 +54,12 @@ var myChart = new Chart(ctx, {
     },
     scale: {
       ticks: {
+        backdropColor: 'rgba(255, 255, 255, 0.5)',
+        fontSize: '',
+        fontColor: '#1d1d1d',
+        backdropPaddingX: '0',
+        backdropPaddingY: '0',
+
         max: 5,
         min: 1,
         stepSize: 1,
